@@ -30,7 +30,6 @@ function escolherCarta(me) {
                 primeira = false;
                 segunda = false;
             }, 900);
-
         }
     }
 }
