@@ -18,17 +18,15 @@ function escolherCarta(me) {
     }
 
     if (primeira && segunda) {
+         primeira = false;
+         segunda = false;
         if (primeira.split('_')[0] == segunda.split('_')[1]) {
             $(document).find('[id^=feedCerto]').show();
-            primeira = false;
-            segunda = false;
         } else {
             $(document).find('[id^=feedErrado]').show();
             setTimeout(() => {
                 $('#' + primeira).show();
                 $('#' + segunda).show();
-                primeira = false;
-                segunda = false;
             }, 900);
         }
     }
