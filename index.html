@@ -1,77 +1,177 @@
 <html>
+
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <style>
+        .janela {
+            background-color: #FAC900;
+            position: absolute;
+            margin-top: -270px;
+            width: 580px;
+            margin-left: 153px;
+            display: grid;
+            justify-content: space-around;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .textoJanela {
+            width: 500px;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
 </head>
+
 <body>
+    <h1>Nutrindo o conhecimento</h1>
+    <p>Vamos conferir os principais tipos de nutrientes presentes na alimentação?
+        Encontre os pares corretos e aproveite para revisar aquilo que acabamos de estudar.</p>
     <!-- fundo -->
-    <img src="./img/fundo.png" alt="" style="opacity: 1;">
+    <img src="./img/fundo.png" alt="" style="opacity: 1; width: 874px; margin-top: 18px;">
 
     <!-- cartas -->
-    <img  style=" cursor: pointer; position: fixed; top: 20px; left: 32px;" src="./img/carta.png" alt="" id="click01_click03">
-    <img  style=" cursor: pointer; position: fixed; top: 20px; left: 128px;" src="./img/carta.png" alt="" id="click02_click04">
-    <img  style=" cursor: pointer; position: fixed; top: 20px; left: 224px;" src="./img/carta.png" alt="" id="click03_click01">
-    <img  style=" cursor: pointer; position: fixed; top: 20px; left: 320px;" src="./img/carta.png" alt="" id="click04_click02">
-    <img  style=" cursor: pointer; position: fixed; top: 20px; left: 415px;" src="./img/carta.png" alt="" id="click05_click08">
+    <img style="cursor: pointer; position: fixed; width:115px; top: 118px; left: 8px;" src="./img/carta.png" alt=""
+        id="click01_click17">
+    <img style="cursor: pointer; position: fixed; width:115px; top: 118px; left: 159px;" src="./img/carta.png" alt=""
+        id="click02_click11">
+    <img style="cursor: pointer; position: fixed; width:115px; top: 118px; left: 311px;" src="./img/carta.png" alt=""
+        id="click03_click16">
+    <img style="cursor: pointer; position: fixed; width:115px; top: 118px; left: 463px;" src="./img/carta.png" alt=""
+        id="click04_click14">
+    <img style="cursor: pointer; position: fixed; width:115px; top: 118px; left: 615px;" src="./img/carta.png" alt=""
+        id="click05_click12">
+    <img style="cursor: pointer; position: fixed; width:115px; top: 118px; left: 767px;" src="./img/carta.png" alt=""
+        id="click06_click10">
 
-    <img  style=" cursor: pointer; position: fixed; top: 115px; left: 32px;" src="./img/carta.png" alt="" id="click06_click09">
-    <img  style=" cursor: pointer; position: fixed; top: 115px; left: 128px;" src="./img/carta.png" alt="" id="click07_click10">
-    <img  style=" cursor: pointer; position: fixed; top: 115px; left: 224px;" src="./img/carta.png" alt="" id="click08_click05">
-    <img  style=" cursor: pointer; position: fixed; top: 115px; left: 320px;" src="./img/carta.png" alt="" id="click09_click06">
-    <img  style=" cursor: pointer; position: fixed; top: 115px; left: 415px;" src="./img/carta.png" alt="" id="click10_click07">
+    <img style="cursor: pointer; position: fixed; width:115px; top: 260px; left: 8px;" src="./img/carta.png" alt=""
+        id="click07_click13">
+    <img style="cursor: pointer; position: fixed; width:115px; top: 260px; left: 159px;" src="./img/carta.png" alt=""
+        id="click08_click15">
+    <img style="cursor: pointer; position: fixed; width:115px; top: 260px; left: 311px;" src="./img/carta.png" alt=""
+        id="click09_click18">
+    <img style="cursor: pointer; position: fixed; width:115px; top: 260px; left: 463px;" src="./img/carta.png" alt=""
+        id="click10_click06">
+    <img style="cursor: pointer; position: fixed; width:115px; top: 260px; left: 615px;" src="./img/carta.png" alt=""
+        id="click11_click02">
+    <img style="cursor: pointer; position: fixed; width:115px; top: 260px; left: 767px;" src="./img/carta.png" alt=""
+        id="click12_click05">
 
-    <img  style=" cursor: pointer; position: fixed; top: 209px; left: 32px;" src="./img/carta.png" alt="" id="click11_click15">
-    <img  style=" cursor: pointer; position: fixed; top: 209px; left: 128px;" src="./img/carta.png" alt="" id="click12_click20">
-    <img  style=" cursor: pointer; position: fixed; top: 209px; left: 224px;" src="./img/carta.png" alt="" id="click13_click16">
-    <img  style=" cursor: pointer; position: fixed; top: 209px; left: 320px;" src="./img/carta.png" alt="" id="click14_click17">
-    <img  style=" cursor: pointer; position: fixed; top: 209px; left: 415px;" src="./img/carta.png" alt="" id="click15_click11">
+    <img style="cursor: pointer; position: fixed; width:115px; top: 392px; left: 8px;" src="./img/carta.png" alt=""
+        id="click13_click07">
+    <img style="cursor: pointer; position: fixed; width:115px; top: 392px; left: 159px;" src="./img/carta.png" alt=""
+        id="click14_click04">
+    <img style="cursor: pointer; position: fixed; width:115px; top: 392px; left: 311px;" src="./img/carta.png" alt=""
+        id="click15_click08">
+    <img style="cursor: pointer; position: fixed; width:115px; top: 392px; left: 463px;" src="./img/carta.png" alt=""
+        id="click16_click03">
+    <img style="cursor: pointer; position: fixed; width:115px; top: 392px; left: 615px;" src="./img/carta.png" alt=""
+        id="click17_click01">
+    <img style="cursor: pointer; position: fixed; width:115px; top: 392px; left: 767px;" src="./img/carta.png" alt=""
+        id="click18_click09">
 
-    <img  style=" cursor: pointer; position: fixed; top: 304px; left: 32px;" src="./img/carta.png" alt="" id="click16_click13">
-    <img  style=" cursor: pointer; position: fixed; top: 304px; left: 128px;" src="./img/carta.png" alt="" id="click17_click14">
-    <img  style=" cursor: pointer; position: fixed; top: 304px; left: 224px;" src="./img/carta.png" alt="" id="click18_click19">
-    <img  style=" cursor: pointer; position: fixed; top: 304px; left: 320px;" src="./img/carta.png" alt="" id="click19_click18">
-    <img  style=" cursor: pointer; position: fixed; top: 304px; left: 415px;" src="./img/carta.png" alt="" id="click20_click12">
 
-    <!-- feeds -->
-    <p id="feedCerto">ACERTOU ABESTADO</p>
-    <p id="feedErrado">Errou ABESTADO</p>
+    <div id="janela_01" class="janela">
+        <p class="textoJanela">Alimentação é o processo em que os seres
+            vivos ingerem os alimentos, que fazem parte da dieta, e adquirem nutrientes.</p>
+    </div>
+    <div id="janela_02" class="janela">
+        <p class="textoJanela">Nutrição é a ciência que estuda os nutrientes dos alimentos: ação, interação e equilíbrio
+            em relação a saúde/doença.</p>
+    </div>
+    <div id="janela_03" class="janela">
+        <p class="textoJanela">A nutrição também estuda o processo pelo qual o organismo ingere, absorve, transporta,
+            utiliza e excreta os nutrientes.</p>
+    </div>
+    <div id="janela_04" class="janela">
+        <p class="textoJanela">A alimentação é o conjunto de hábitos ou substâncias que o homem utiliza para sua
+            sobrevivência.</p>
+    </div>
+    <div id="janela_05" class="janela">
+        <p class="textoJanela">A alimentação de cada pessoa depende de suas necessidades vitais e, também, da cultura da
+            população onde ela vive.</p>
+    </div>
+    <div id="janela_06" class="janela">
+        <p class="textoJanela">A cultura é fator determinante na alimentação. No Brasil, é possível encontrar diversos
+            tipos de dietas, dependendo da
+            região.</p>
+    </div>
+    <div id="janela_07" class="janela">
+        <p class="textoJanela">Cada local do Brasil possui uma forma típica de se alimentar, de acordo com a tradição e
+            os alimentos a que se tem
+            acesso.</p>
+    </div>
+    <div id="janela_08" class="janela">
+        <p class="textoJanela">Nutrientes são substâncias encontradas nos alimentos, que possuem funções variadas no
+            organismo. São nutrientes:
+            proteínas, gorduras, carboidratos, vitaminas e minerais.</p>
+    </div>
+    <div id="janela_09" class="janela">
+        <p class="textoJanela">Dieta não é somente para emagrecer, dieta é o conjunto de alimentos que se ingere, seja
+            com algum propósito ou não.</p>
+    </div>
+    <div id="feedFinal" class="janela">
+        <p class="textoJanela">Parabéns! Você conseguiu.</p>
+    </div>
+
+
 </body>
+
 </html>
-<!--<script src="/js/jogoDaMemoria.js"></script>-->
 
 <script>
     let primeira = false;
-let segunda = false;
-$(document).find('[id^=click]').on('click', escolherCarta);
-$(document).find('[id^=feedCerto]').hide();
-$(document).find('[id^=feedErrado]').hide();
+    let segunda = false;
+    let arrDeRespostas = [];
+    let janelas = $(document).find('[id^=janela]').hide();
+    $(document).find('[id^=click]').on('click', escolherCarta);
+    $(document).find('[id^=feedFinal]').hide();
 
-function escolherCarta(me) {
-    $(document).find('[id^=feedCerto]').hide();
-    $(document).find('[id^=feedErrado]').hide();
-    if (!primeira || !segunda) {
-        $('#' + me.currentTarget.id).hide();
-    }
+    janelas.map((i, e) => {
+        arrDeRespostas[i] = false;
+    })
 
-    if (!primeira) {
-        primeira = me.currentTarget.id;
-    } else if (primeira && !segunda) {
-        segunda = me.currentTarget.id;
-    }
+    function escolherCarta(me) {
+        fecharTodasAsJanelas();
+        if (!primeira || !segunda) {
+            $('#' + me.currentTarget.id).hide();
+        }
 
-    if (primeira && segunda) {
-        if (primeira.split('_')[0] == segunda.split('_')[1]) {
-            $(document).find('[id^=feedCerto]').show();
-            primeira = false;
-            segunda = false;
-        } else {
-            $(document).find('[id^=feedErrado]').show();
-            setTimeout(() => {
-                $('#' + primeira).show();
-                $('#' + segunda).show();
+        if (!primeira) {
+            primeira = me.currentTarget.id;
+        } else if (primeira && !segunda) {
+            segunda = me.currentTarget.id;
+        }
+
+        if (primeira && segunda) {
+            if (primeira.split('_')[0] == segunda.split('_')[1]) {
+                let numero1 = (primeira.split('_')[0]).split('click')[1];
+                let numero2 = (segunda.split('_')[0]).split('click')[1];
+                let menor;
+                if (numero1 > numero2) {
+                    menor = numero2;
+                } else {
+                    menor = numero1
+                }
+                $(document).find(`[id^=janela_${menor}]`).fadeIn().on('click', fecharTodasAsJanelas);
                 primeira = false;
                 segunda = false;
-            }, 900);
+                arrDeRespostas[Number(menor) - 1] = true;
+            } else {
+                setTimeout(() => {
+                    $('#' + primeira).show();
+                    $('#' + segunda).show();
+                    primeira = false;
+                    segunda = false;
+                }, 900);
+            }
         }
     }
-}
-    </script>
+
+    function fecharTodasAsJanelas() {
+        $(document).find('[id^=janela]').fadeOut();
+        if (arrDeRespostas.every(elem => elem == true)) {
+            $(document).find('[id^=feedFinal]').fadeIn();
+        }
+    }
+</script>
